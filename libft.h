@@ -6,7 +6,7 @@
 /*   By: thamoliv <thamoliv@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 18:15:09 by thamoliv          #+#    #+#             */
-/*   Updated: 2026/05/28 18:15:10 by thamoliv         ###   ########.fr       */
+/*   Updated: 2026/06/01 16:44:23 by thamoliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdint.h>
 
 typedef struct s_list
 {
@@ -42,7 +43,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, unsigned int n);
 void	*ft_memchr(const void *s, int c, size_t len);
 int		ft_memcmp(const void *s1, const void *s2, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
